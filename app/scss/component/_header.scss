@@ -1,0 +1,32 @@
+.header {
+    margin-bottom: 3.44rem;
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__img {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        @include addaptive-value(width, 400, 250, 1);
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: .5rem;
+        img {
+            max-width: 2.5rem;
+
+        }
+    }
+
+    &__link-img {
+        margin: 0 auto;
+    }
+
+}

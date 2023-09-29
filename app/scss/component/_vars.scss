@@ -1,0 +1,49 @@
+@import "./mixin";
+
+$defultBackgrond: #000000;
+$defultColorText: #ffffff;
+
+%defaultFontText {
+    font-family: "Open Sans", sans-serif;
+    @include addaptive-value(font-size, 20, 14, 1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0875rem;
+}
+
+%defultFontTitle {
+    font-family: "Montserrat", sans-serif;
+    @include addaptive-value(font-size, 28, 18, 1);
+    font-style: normal;
+    font-weight: 700;
+}
+%fontLink {
+    font-family: "Montserrat", sans-serif;
+    @include addaptive-value(font-size, 20, 14, 1);
+    font-style: normal;
+    font-weight: 400;
+}
+
+%fontTitle {
+    font-family: "Open Sans", sans-serif;
+    @include addaptive-value(font-size, 24, 16, 1);
+    font-style: normal;
+    font-weight: 700;
+}
+
+%line {
+    position: relative;
+    padding-bottom: 1rem;
+    &:not(:last-child)::before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 16px;
+        bottom: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        height: 1px;
+        background: linear-gradient(90deg, #004EFF 0%, #00FFD1 100.75%);
+    }
+}

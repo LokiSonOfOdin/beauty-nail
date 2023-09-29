@@ -1,0 +1,32 @@
+.footer {
+    text-align: center;
+
+    &__title {
+        @extend %fontTitle;
+        margin-bottom: 1rem;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+        gap: 1rem 1rem;
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        img {
+            max-width: 2.5rem;            
+        }
+    }
+
+    &__copyright {
+        margin: 2rem;
+    }
+}

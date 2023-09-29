@@ -1,0 +1,47 @@
+.swipers {
+    color: black;
+    max-width: 100vh;
+    border-radius: 0.8rem;
+    &__feedback {
+        max-width: 70vh;
+    }
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slide {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem 1rem;
+        border-radius: 0.8rem;
+    }
+
+    &__slide-img {
+        border-radius: 0.8rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__slide-big {
+        grid-column-start: span 2;
+    }
+    &__slide-small {
+        grid-column-start: span 1;
+    }
+    &-button-next {
+        color: #41cfd6;
+        @include addaptive-value(--swiper-navigation-size, 60, 40, 1);
+    }
+
+    &-button-prev {
+        color: #004EFF;
+        @include addaptive-value(--swiper-navigation-size, 60, 40, 1);
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #3497dd;
+        @include addaptive-value(width, 20, 6, 1);
+        @include addaptive-value(height, 20, 6, 1);
+    }
+}
